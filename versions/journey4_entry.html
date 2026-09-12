@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <base href="/singularity-compass/story/v4/">
+  <script>
+    // Keep both older result versions, including their invalid-link message.
+    if (location.hash.startsWith('#r=') && !location.hash.startsWith('#r=journey4.')) {
+      location.replace(new URL('../../legacy/', document.baseURI).href + location.hash);
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f5ec">
+  <meta name="description" content="공항에서 박람회, 여행에서 돌아온 뒤까지. 지피짱과 고른 13개의 선택으로 내가 그리는 미래를 만나보세요.">
+  <link rel="canonical" href="https://ph4segl3dak.github.io/singularity-compass/">
+  <meta property="og:title" content="지피짱, 같이 갈래?">
+  <meta property="og:description" content="13개의 선택으로 만나는 나의 미래. 지피짱과 AI 박람회로 떠나요.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://ph4segl3dak.github.io/singularity-compass/story/v4/art/airport_arrival.webp">
+  <title>지피짱, 같이 갈래? · 너와 그리는 미래</title>
+  <link rel="icon" href="../../favicon.svg">
+  <link rel="preload" href="./fonts/suit-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./novel.css">
+  <script src="./novel.js" type="module"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <a class="wordmark" href="./" aria-label="이야기 처음으로"><span class="brand-mark" aria-hidden="true">△</span> 미래 생활 안내서</a>
+      <span class="edition"><span id="chapter-name">출발</span> · <span id="choice-progress">0 / 13</span></span>
+    </header>
+    <main class="novel-shell">
+      <h1>지피짱, <span>같이 갈래?</span></h1>
+      <nav aria-label="오늘의 여정"><ol id="chapters" class="chapters"></ol></nav>
+      <p id="link-notice" class="link-notice" role="status" hidden></p>
+      <section id="story" class="story" aria-label="지피짱과 하루의 이야기" aria-live="polite" aria-atomic="true"></section>
+      <div class="under-story"><p>너의 선택을 기억하며 이어지는 이야기</p><div class="story-navigation"><button id="back" class="text-button" type="button" hidden><span aria-hidden="true">←</span> 이전 장면</button><button id="restart" class="text-button" type="button" hidden>처음부터 <span aria-hidden="true">↺</span></button></div></div>
+      <noscript><p class="noscript">이야기를 진행하려면 브라우저에서 JavaScript를 켜 주세요.</p></noscript>
+    </main>
+    <footer><span>지피짱과 함께하는 가상의 미래 이야기</span><nav aria-label="이전 테스트 기록"><a href="../../legacy/">이전 테스트</a><a href="../../types/">이전 유형</a><a href="../../stats/">이전 테스트 통계</a></nav></footer>
+  </div>
+</body>
+</html>
