@@ -1,0 +1,12 @@
+{
+  "title": "지피짱, 같이 갈래?",
+  "release": "journey5-public-20260912",
+  "storyVersion": "journey5-20260912",
+  "resultVersion": "journey5-reading-1",
+  "choices": 12,
+  "sharePrefix": "journey5.",
+  "previousStory": "story/v4/",
+  "previousPublicCommit": "3b779b6d2d0bc16891a0d34640533408090757b7",
+  "legacyEntry": "legacy/",
+  "statistics": "legacy_only_no_new_story_collection"
+}
